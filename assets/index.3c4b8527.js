@@ -1,0 +1,1 @@
+import{_ as s}from"./index.80984e7a.js";import{c as a,F as t,j as n,o as r,e as c,t as _,n as o}from"./vendor.5cebd684.js";const d={},i={class:"card"};function l(f,p){return r(),a("div",i,[(r(),a(t,null,n(["back","front"],e=>c("div",{key:e,class:o("card-item card-item-"+e)},_(e),3)),64))])}var v=s(d,[["render",l],["__scopeId","data-v-12f1505e"]]);export{v as default};
