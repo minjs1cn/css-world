@@ -1,1 +1,0 @@
-import{_ as e}from"./index.7ebc3712.js";import{c as _,o as c}from"./vendor.5cebd684.js";const r={},t={class:"particle"};function o(s,n){return c(),_("div",t)}var i=e(r,[["render",o],["__scopeId","data-v-65458802"]]);export{i as default};
