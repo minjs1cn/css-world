@@ -1,0 +1,1 @@
+import{_ as t}from"./index.dd95cb2d.js";import{c,o as _,m as d,q as a,e as o}from"./vendor.ae8ef8f2.js";const n={},s=e=>(d("data-v-0a9c2791"),e=e(),a(),e),r={class:"body"},i=s(()=>o("div",{class:"top"},null,-1)),p=s(()=>o("div",{class:"bottom"},null,-1)),l=[i,p];function v(e,f){return _(),c("div",r,l)}var h=t(n,[["render",v],["__scopeId","data-v-0a9c2791"]]);export{h as default};
