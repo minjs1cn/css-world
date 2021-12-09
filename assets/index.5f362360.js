@@ -1,1 +1,0 @@
-import{_ as e}from"./index.dd95cb2d.js";import{c as _,o as c}from"./vendor.ae8ef8f2.js";const o={},r={class:"wave"};function s(t,a){return c(),_("div",r)}var f=e(o,[["render",s],["__scopeId","data-v-04ececf2"]]);export{f as default};

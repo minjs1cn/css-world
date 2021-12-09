@@ -1,1 +1,0 @@
-import{_ as e}from"./index.dd95cb2d.js";import{c as _,o as c}from"./vendor.ae8ef8f2.js";const o={},t={class:"font"};function n(r,s){return c(),_("div",t,"Hi \u55E8")}var i=e(o,[["render",n],["__scopeId","data-v-7305491c"]]);export{i as default};
