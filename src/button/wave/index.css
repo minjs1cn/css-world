@@ -1,0 +1,43 @@
+.button-wave {
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+
+  position: relative;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  color: var(--gray-1);
+  background-color: var(--color-6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-wave:before {
+  position: absolute;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  display: block;
+  width: 1px;
+  height: 1px;
+  background-color: var(--gray-1);
+  border-radius: 50%;
+  opacity: 0;
+  content: '';
+}
+
+.button-wave:focus:before {
+  animation: button-wave-fadeOut 2s ease-in-out;
+}
+
+@keyframes button-wave-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    transform: scale(500);
+  }
+  100% {
+    opacity: 0;
+  }
+}

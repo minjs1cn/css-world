@@ -1,0 +1,48 @@
+.checkbox-tick {
+  display: none;
+}
+
+.checkbox-tick + label {
+  /* 改变大小 */
+  --s: 100px;
+
+  /* ignore */
+  --b: 0.9;
+  --bi: 0.6;
+
+  position: relative;
+  box-sizing: border-box;
+  width: var(--s);
+  height: var(--s);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--gray-6);
+  cursor: pointer;
+}
+
+.checkbox-tick + label:before {
+  display: block;
+  box-sizing: border-box;
+  width: calc(var(--s) * var(--b));
+  height: calc(var(--s) * var(--b) * var(--bi));
+  border-color: transparent transparent var(--color-6) var(--color-6);
+  border-style: solid;
+  border-width: 2px;
+  transform: rotate(-45deg) translate(0, calc(var(--s) * (1 - var(--b)) * var(--bi)));
+  content: '';
+}
+
+.checkbox-tick + label::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #fff;
+  transition: transform 0.3s ease-out;
+  content: '';
+}
+
+.checkbox-tick:checked + label:after {
+  transform: translate(var(--s));
+}

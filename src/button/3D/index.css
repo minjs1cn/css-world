@@ -1,0 +1,21 @@
+.button-3d {
+  --color: var(--color-6);
+  --color-shadow: var(--color-7);
+  --color-gray: var(--gray-6);
+
+  position: relative;
+  width: 200px;
+  height: 50px;
+  color: var(--gray-1);
+  background-color: var(--color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 0 var(--color-shadow), 0 20px 20px var(--color-gray);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.button-3d:active {
+  box-shadow: 0 4px 0 var(--color-shadow), 0 16px 16px var(--color-gray);
+  transform: translate(0, 4px);
+}

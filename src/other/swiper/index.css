@@ -1,0 +1,34 @@
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.swiper-slide:nth-child(1),
+.swiper-slide:last-child {
+  background: var(--color-6);
+}
+.swiper-slide:nth-child(2) {
+  background: var(--color-7);
+}
+.swiper-slide:nth-child(3) {
+  background: var(--color-8);
+}

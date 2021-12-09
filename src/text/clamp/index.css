@@ -1,0 +1,52 @@
+.clamp-container {
+  width: 500px;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+.clamp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  margin: 10px;
+  overflow: hidden;
+  line-height: 1.5;
+  text-align: justify;
+  border: 10px solid transparent;
+  outline: 1px solid;
+}
+
+.title {
+  display: -webkit-box;
+  margin-bottom: 3px;
+  overflow: hidden;
+  font-size: 16px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.excerpt {
+  flex: 1;
+  max-height: 3em;
+  margin-top: auto;
+  overflow: hidden;
+  font-size: 12px;
+}
+.excerpt::before {
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  height: 100%;
+  margin-left: 2px;
+  content: '...';
+  shape-outside: inset(calc(100% - 1.5em) 0 0 0);
+}
+
+.excerpt::after {
+  position: absolute;
+  width: 999vh;
+  height: 999vh;
+  background: #fff;
+  box-shadow: -2em 2em #fff;
+  content: '';
+}
