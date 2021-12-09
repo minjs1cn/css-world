@@ -39,6 +39,16 @@ body {
   height: 100vh;
 }
 
-.scene.column {
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.column {
   flex-direction: column;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }

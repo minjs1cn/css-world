@@ -1,0 +1,49 @@
+.clip-path {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-6);
+}
+
+.clip-path-1 {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.clip-path-2 {
+  clip-path: circle();
+}
+
+.clip-path-3 {
+  animation: clip-path-3 1s infinite;
+  clip-path: circle(0%);
+}
+
+@keyframes clip-path-3 {
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(50%);
+  }
+}
+
+.clip-path-4 {
+  animation: clip-path-4 1s ease-in-out infinite;
+  clip-path: ellipse(30% 50%);
+}
+
+@keyframes clip-path-4 {
+  0% {
+    clip-path: ellipse(30% 50%);
+  }
+  100% {
+    clip-path: ellipse(50% 30%);
+  }
+}
+
+.clip-path-5 {
+  clip-path: inset(10% 20% round 5px);
+}
+
+.clip-path-6 {
+  clip-path: path('M 50 0 L 100 0 L 100 100 L 0 100 Z');
+}
