@@ -1,0 +1,45 @@
+.backdrop-bg {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png);
+  background-size: cover;
+  border: 1px solid var(--gray-13);
+}
+
+.backdrop {
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+.backdrop-brightness {
+  backdrop-filter: brightness(0.6);
+}
+
+.backdrop-contrast {
+  backdrop-filter: contrast(0.6);
+}
+
+.backdrop-grayscale {
+  backdrop-filter: grayscale(0.6);
+}
+
+.backdrop-drop-shadow {
+  backdrop-filter: drop-shadow(4px 4px 10px var(--color-6));
+}
+
+.backdrop-hue-rotate {
+  backdrop-filter: hue-rotate(45deg);
+}
+
+.backdrop-opacity {
+  backdrop-filter: opacity(0.6);
+}

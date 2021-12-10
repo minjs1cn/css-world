@@ -1,0 +1,23 @@
+.ps-png-bg {
+  --s: 2px;
+
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(
+      to right,
+      var(--gray-4),
+      var(--gray-4) var(--s),
+      transparent var(--s),
+      transparent calc(var(--s) * 2)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent var(--s),
+      var(--gray-4) var(--s),
+      var(--gray-4) calc(var(--s) * 2)
+    );
+  background-repeat: repeat-x, repeat-y;
+  background-position: calc(var(--s) / 2) top, left top calc(var(--s) / 2 * -1);
+  background-size: calc(var(--s) * 2) 100%, 100% calc(var(--s) * 2);
+}

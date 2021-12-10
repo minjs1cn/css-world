@@ -1,0 +1,127 @@
+.gradients {
+  width: 100px;
+  height: 100px;
+}
+
+.gradients-0 {
+  background-color: var(--color-1);
+}
+
+.gradients-1 {
+  background-image: linear-gradient(to bottom, var(--color-1), var(--color-10));
+}
+
+.gradients-2 {
+  background-image: linear-gradient(to top, var(--color-1), var(--color-10));
+}
+
+.gradients-3 {
+  background-image: linear-gradient(to left, var(--color-1), var(--color-10));
+}
+
+.gradients-4 {
+  background-image: linear-gradient(to right, var(--color-1), var(--color-10));
+}
+
+.gradients-5 {
+  background-image: linear-gradient(to bottom right, var(--color-1), var(--color-10));
+}
+
+.gradients-6 {
+  background-image: linear-gradient(to top left, var(--color-1), var(--color-10));
+}
+
+.gradients-7 {
+  background-image: linear-gradient(30deg, var(--color-1), var(--color-10));
+}
+
+.gradients-8 {
+  background-image: linear-gradient(to right, var(--color-1) 20%, var(--color-10));
+}
+
+.gradients-9 {
+  background-image: repeating-linear-gradient(to right, var(--color-1), var(--color-10) 20%);
+}
+
+.gradients-10 {
+  background-image: radial-gradient(var(--color-1), var(--color-10));
+}
+
+.gradients-11 {
+  background-image: radial-gradient(circle, var(--color-1), var(--color-10));
+}
+
+.gradients-12 {
+  background-image: radial-gradient(
+    circle at 0 0,
+    transparent,
+    transparent 100px,
+    var(--color-10) 100px /* 如果有锯齿效果可以增加像素 var(--color-10) 100.5px, */
+  );
+}
+
+.gradients-13 {
+  background-image: radial-gradient(
+    circle closest-side at 50% 20%,
+    var(--color-4),
+    var(--color-10)
+  );
+}
+
+.gradients-14 {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 20%,
+    var(--color-4),
+    var(--color-10)
+  );
+}
+
+.gradients-15 {
+  background-image: radial-gradient(
+    circle closest-corner at 50% 20%,
+    var(--color-4),
+    var(--color-10)
+  );
+}
+
+.gradients-16 {
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 20%,
+    var(--color-4),
+    var(--color-10)
+  );
+}
+
+.gradients-17 {
+  background-image: repeating-radial-gradient(var(--color-1), var(--color-10) 20%);
+  border-radius: 50%;
+}
+
+.gradients-18 {
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--gray-4),
+      var(--gray-4) 5%,
+      transparent 5%,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 5%,
+      var(--gray-4) 5%,
+      var(--gray-4) 10%
+    );
+  background-repeat: no-repeat;
+  background-position: 5px 0, left top;
+  background-size: 120px 100px, 120px 120px;
+}
+
+.gradients-19 {
+  background-image: radial-gradient(circle at 20px 10px, var(--color-6) 10px, transparent 0),
+    linear-gradient(var(--color-6), var(--color-6)), linear-gradient(var(--color-6), var(--color-6)),
+    radial-gradient(circle at 10px 0, transparent 10px, var(--color-6) 0);
+  background-repeat: repeat-x, no-repeat, no-repeat, repeat-x;
+  background-position: left top, center bottom, center bottom, -10px bottom;
+  background-size: 30px, calc(100% - 20px) calc(100% - 10px), calc(100% - 35px) 100%, 100% 10px;
+}

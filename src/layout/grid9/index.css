@@ -1,0 +1,69 @@
+.grid9 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  overflow: hidden;
+  counter-reset: count -9; /*初始化*/
+}
+
+.grid9-item {
+  flex: 0 0 calc(100% / 3);
+  height: 100px;
+  background-color: var(--color-3);
+  /* aspect-ratio: 1; */
+  counter-increment: count; /*计数器自增*/
+}
+
+.grid9-item:nth-child(9) ~ .grid9-item:last-child:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  font-size: 30px;
+  content: counter(count);
+}
+
+.grid9-item:nth-child(9) ~ .grid9-item {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: calc(100% / 3);
+}
+
+.grid9-item:nth-child(1) {
+  background-color: var(--color-4);
+}
+
+.grid9-item:nth-child(2) {
+  background-color: var(--color-5);
+}
+
+.grid9-item:nth-child(3) {
+  background-color: var(--color-6);
+}
+
+.grid9-item:nth-child(4) {
+  background-color: var(--color-7);
+}
+
+.grid9-item:nth-child(5) {
+  background-color: var(--color-8);
+}
+
+.grid9-item:nth-child(6) {
+  background-color: var(--color-9);
+}
+
+.grid9-item:nth-child(7) {
+  background-color: var(--color-10);
+}
+
+.grid9-item:nth-child(8) {
+  background-color: var(--color-4);
+}
+
+.grid9-item:nth-child(9) {
+  background-color: var(--color-3);
+}

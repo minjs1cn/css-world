@@ -45,5 +45,9 @@
 }
 
 .clip-path-6 {
-  clip-path: path('M 50 0 L 100 0 L 100 100 L 0 100 Z');
+  clip-path: path('M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z');
+}
+
+.clip-path-7 {
+  clip-path: url(#clip-path-7);
 }

@@ -1,5 +1,8 @@
 ---
-title: Clip-path
+title: 路径剪裁
+group:
+  title: 属性
+  order: 1
 ---
 
 ## clip-path

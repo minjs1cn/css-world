@@ -1,7 +1,7 @@
 ---
 title: BoxShadow
 group:
-  title: 边框
+  title: 线框
 ---
 
 ## boxshadow
