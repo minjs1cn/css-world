@@ -45,6 +45,10 @@ body {
   justify-content: space-evenly;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .column {
   flex-direction: column;
 }
